@@ -44,4 +44,4 @@ How many of those planets might be habitable?
 
 ## Analysis plan
 
-I plan to use ML to make a decent guess at how many planets might be in Andromeda. In order to do this I will be evaluating how many planets are in Andromeda and then use ML to calculate planets. 
+I plan to use ML to make a decent guess at how many planets might be in Andromeda. In order to do this I will be evaluating how many stars are in Andromeda and then use ML to calculate planets. 
