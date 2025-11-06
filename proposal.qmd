@@ -1,11 +1,11 @@
 ---
-title: "Proposal title"
+title: "Predicting the Number of Planets in the Andromeda Galaxy"
 subtitle: "Proposal"
-author: 
-  - name: "Team Name - Team member 1, Team member 2,..."
+author:
+  - name: "James"
     affiliations:
       - name: "College of Information Science, University of Arizona"
-description: "Project description"
+description: "The Andromeda Galaxy is the nearest galaxy to the Milky Way at about 2.5 million light years away. There are some reports of planets being found in Andromeda, but none have been confirmed as those events were not reproducible. In this project, I aim to use facts we know about the Milky Way and Andromeda Galaxies to simulate the number of planets that might be in Andromeda. I believe this simulation can work because Andromeda and the Milky Way are both spiral galaxies. However, I also understand that they are very different in certain ways in regards to their size, star compositions, and age."
 format:
   html:
     code-tools: true
@@ -19,27 +19,39 @@ execute:
 jupyter: python3
 ---
 
+
+
 ```{python}
-#| label: load-pkgs
+#| label: load-packages
 #| message: false
+import pandas as pd
 import numpy as np
 ```
 
 ## Dataset
 
 ```{python}
-#| label: load-dataset
+#| label: load-data
 #| message: false
+
+# Load dataset
+
+# Load dataset
+file_path = "data/HST_2025-11-06T12_15_30-08_00.csv"
+df = pd.read_csv(file_path)
+
+print(df.head())
+
 ```
 
-A brief description of your dataset including its provenance, dimensions, etc. as well as the reason why you chose this dataset.
-
-Make sure to load the data and use inline code for some of this information.
+This dataset will serve as basis for my simulation. It is from NASA and the PHAT archive. 
 
 ## Questions
 
-The two questions you want to answer.
+How many planets are in Andronmeda roughly?
+
+How many of those planets might be habitable? 
 
 ## Analysis plan
 
--   A plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any).
+I plan to use ML to make a decent guess at how many planets might be in Andromeda. In order to do this I will be evaluating how many stars are in Andromeda and then use ML to calculate planets. 
