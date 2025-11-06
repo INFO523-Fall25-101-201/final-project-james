@@ -1,11 +1,11 @@
 ---
-title: "Predicitng the Number of Planets in the Andromeda Galaxy"
+title: "Predicting the Number of Planets in the Andromeda Galaxy"
 subtitle: "Proposal"
-author: James
-  - name: James
+author:
+  - name: "James"
     affiliations:
       - name: "College of Information Science, University of Arizona"
-description: "The Andromeda Galaxy is the nearest galaxy to the Milky Way at about 2.5 million light years away. There are some reports of planets being found in Andromeda, but none have been confirmed as those events were not reproducible. I*n this project, I aim to use facts we know about the Milky Way and Andromeda Galaxies to simulate the number of planets that might be in Andromeda. I belive this simulation can work because Andromeda and the Milky Way are both sprial galaxies. However, I also understand that they are very different in certain ways in regards to their size, star compositions, and age."
+description: "The Andromeda Galaxy is the nearest galaxy to the Milky Way at about 2.5 million light years away. There are some reports of planets being found in Andromeda, but none have been confirmed as those events were not reproducible. In this project, I aim to use facts we know about the Milky Way and Andromeda Galaxies to simulate the number of planets that might be in Andromeda. I believe this simulation can work because Andromeda and the Milky Way are both spiral galaxies. However, I also understand that they are very different in certain ways in regards to their size, star compositions, and age."
 format:
   html:
     code-tools: true
@@ -18,6 +18,7 @@ execute:
   warning: false
 jupyter: python3
 ---
+
 
 ```{python}
 #| label: load-pkgs
